@@ -1,0 +1,271 @@
+/* universal styles */
+
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.blue {
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+}
+
+/* banner w/ background image */
+
+
+.banner {
+  height: 30rem;
+  background-image: url("../images/main-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* blue containers, mainly header */
+
+.head {
+  margin: 1rem auto 10rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin: 1rem 1rem 1rem 2rem;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem 2rem 1rem 0;
+}
+
+/* slogan div */
+
+.slogan {
+  display: flex;
+  justify-content: flex-end;
+  width: 960px;
+  margin: auto;
+  position: relative;
+}
+
+.catchphrase {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  position: absolute;
+  right: -2rem;
+}
+
+/* upper middle section naming services offered*/
+
+.basics {
+  width: 27rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.service {
+  width: 5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  width: 3.5rem;
+  height: 100%;
+}
+
+.name {
+  display: block;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+/* lower middle section w/ further information */
+
+.poi {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.philosophy,
+.appointments {
+  width: 10rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+}
+
+p {
+  padding: 1rem 0px;
+}
+
+/* Footer */
+
+.foot {
+  background-color: azure;
+}
+
+.copyright {
+  margin: 4rem 0 4rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.copyright span {
+  margin-left: 1rem;
+}
+
+.copyright img {
+  height: 1.5rem;
+}
+
+/* when head-container snaps to top */
+
+@media only screen and (max-width: 998px) {
+
+  .head {
+    width: 100%;
+    margin: 0 0 5rem 0;
+  }
+
+  .slogan {
+    width: 100%;
+  }
+
+  .catchphrase {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    right: 2rem;
+  }
+}
+/* when rightmost <li> of navigation-div starts to disappear */
+
+@media only screen and (max-width: 854px) {
+
+  .container,
+  .banner,
+  .slogan {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .logo span,
+  .nav-desktop,
+  .copyright span {
+    display: none;
+  }
+
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .head {
+    margin: 0 0 9rem 0;
+  }
+
+  .nav-mobile {
+    display: initial;
+  }
+
+  .slogan {
+    background-color: white;
+    justify-content: center;
+    position: initiaL;
+  }
+
+  .catchphrase {
+    width: 100%;
+    padding: 1rem auto;
+    text-align: center;
+    font-size: 1rem;
+    position: initial;
+  }
+
+  .basics {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3.77rem auto;
+  }
+
+  .fittings {
+    margin: 1.54rem auto;
+  }
+
+  .poi {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .philosophy,
+  .appointments {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    margin: 1rem 0 4rem 0;
+  }
+
+  .name,
+  p {
+    font-size: 0.77rem;
+  }
+
+  .copyright {
+    width: auto;
+    margin-left: 0;
+    justify-content: center;
+  }
